@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('css/whatsapp.css') }}">
+
 
     <!-- Estilos personalizados -->
     <style>
@@ -59,9 +61,10 @@
 
 <!-- Sección Hero -->
 <section id="inicio" class="py-5 bg-indigo-gradient text-white">
-    <div class="container text-center py-5">
+    <div class="container text-center py-4">
         <h1 class="display-4 fw-bold mb-4">Hola, soy Norberto Arredondo Vizcarra</h1>
-        <p class="lead">Desarrollador web front & back</p>
+        <p style="color: #f6f7f8; font-size: xx-large" class="fw-bold">📱 Front-end lover</p>
+        <p style="color: #f6f7f8; font-size: xx-large" class="fw-bold">🧠 Back-end thinker</p>
     </div>
 </section>
 
@@ -100,7 +103,7 @@
 <!-- Sección Proyectos -->
 <section id="proyectos" class="py-5 text-center">
     <div class="container">
-        <h2 class="text-center mb-5 mimp">Mis Proyectos</h2>
+        <h2 class="text-center mb-5 mimp">Mis Participaciones</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card project-card h-100 shadow">
@@ -141,7 +144,7 @@
     <div class="container">
         <div class="row g-5">
             <div class="col-md-6">
-                <h2 class="mb-4">Contáctame</h2>
+                <h2 class="mb-4 mimp">Contáctame</h2>
                 <form>
                     <div class="mb-3">
                         <input type="text" class="form-control" placeholder="Nombre">
@@ -152,22 +155,22 @@
                     <div class="mb-3">
                         <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
                     </div>
-                    <button class="btn btn-primary w-100">Enviar Mensaje</button>
+                    <button style="background: #63077d; color: #fdfdfd;" class="btn w-100">Enviar Mensaje</button>
                 </form>
             </div>
 
             <div class="col-md-6">
                 <div class="mb-4">
-                    <h3 class="mb-3">Información de Contacto</h3>
+                    <h3 class="mb-3 mimp">Información de Contacto</h3>
                     <ul class="list-unstyled">
                         <li class="mb-3">
-                            <i class="fas fa-map-marker-alt text-primary me-2"></i>Culiacán,Sin. México
+                            <i class="fas fa-map-marker-alt mimp me-2"></i>Culiacán,Sin. México
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-phone text-primary me-2"></i>+52 6673186588
+                            <i class="fas fa-phone mimp me-2"></i>+52 6673186588
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-envelope text-primary me-2"></i>lintoriginal@hotmail.com
+                            <i class="fas fa-envelope mimp me-2"></i>lintoriginal@hotmail.com
                         </li>
                     </ul>
                 </div>
@@ -186,15 +189,27 @@
 <footer class="bg-dark text-white py-4">
     <div class="container text-center">
         <div class="d-flex justify-content-center gap-3 mb-3">
-            <a href="#" class="text-white"><i class="fab fa-github fa-lg"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://github.com/Norsuiza" class="text-white"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.instagram.com/north_erto/" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
         </div>
-        <p class="mb-0">&copy; 2023 Norberto Arredondo Vizcarra. Todos los derechos reservados.</p>
+        <p class="mb-0">&copy; <span id="year"></span> Norberto Arredondo Vizcarra. Todos los derechos reservados.</p>
     </div>
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        //Asignar el año actual
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+    </script>
+
 </body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=526673186588&text=Hola!%20Vi%20tu%20pagina%20web%20y%20estoy%20interesado!" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
+
+
 </html>
