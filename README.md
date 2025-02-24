@@ -1,6 +1,7 @@
-# 🚀 Portfolio Profesional - [Tu Nombre]
+# 🚀 Portfolio Profesional - [Norberto Arredondo Vizcarra]
 
-![Portfolio Preview](https://via.placeholder.com/800x400.png?text=Preview+del+Portfolio)
+![miporta](https://github.com/user-attachments/assets/0c008daf-d762-4a10-8def-2677c0c3cd24)
+
 
 **Un showcase moderno de mis habilidades y proyectos como desarrollador full-stack**
 
@@ -37,9 +38,4 @@
 - Composer
 - Git & GitHub
 
-## 🚀 Instalación Local
-
-1. Clonar repositorio:
-```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+  
